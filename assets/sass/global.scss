@@ -1,0 +1,286 @@
+﻿@import "compass/reset";
+@import "compass/css3";
+@import "compass/support";
+@import "compass/utilities/sprites";
+/*******Global*******/
+* {
+  vertical-align: middle !important;
+}
+html {
+  line-height: inherit;
+}
+
+@mixin transition($property:all,$time:0.3s){
+  @include transition-property($property);
+  @include transition-duration($time);
+}
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+a{
+  @include transition;
+  img{
+    border: none;
+  }
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+  @include transition;
+  outline: none;
+}
+
+button:focus{
+  outline: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+$Margin-col : 15px;
+.container-fluid{
+  padding: {
+    left: $Margin-col;
+    right: $Margin-col;
+  }
+  overflow: hidden;
+}
+.container{
+  padding: {
+    left: $Margin-col;
+    right: $Margin-col;
+  }
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: $Margin-col;
+  padding-right: $Margin-col;
+}
+.row{
+  margin-left: -$Margin-col;
+  margin-right: -$Margin-col;
+}
+
+.sprite{
+  display: block;
+  content: "";
+}
+
+@import "icons/*.png";
+@include all-icons-sprites;
+
+$size1200: "only screen and (max-width : 1199px)";
+$size1024: "only screen and (max-width : 1024px)";
+$size992: "only screen and (max-width : 991px)";
+$size768: "only screen and (max-width : 767px)";
+$size568: "only screen and (max-width : 567px)";
+$size480: "only screen and (max-width : 480px)";
+$size414: "only screen and (max-width : 414px)";
+$size375: "only screen and (max-width : 375px)";
+$size360: "only screen and (max-width : 360px)";
+$size320: "only screen and (max-width : 320px)";
+
+$c1: #000;
+$c2: #fff;
+$c3: #d8ccbc;
+$c4: #333300;
+$c5: #7d4434;
+
+$gr: #333;
+$gr2: #666;
+$border: #4e4e4e;
+
+/********* Fonts **********/
+@font-face {
+  font-family: "Iransans_Bold";
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/eot/IRANSansWeb_Bold.eot');
+  src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+     url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+     url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Iransans_Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eot/IRANSansWeb_Medium.eot');
+  src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+     url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+     url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Iransans";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/eot/IRANSansWeb.eot');
+  src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+     url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+     url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Iransans_Light";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/eot/IRANSansWeb_Light.eot');
+  src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+     url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+     url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+/********* Fonts **********/
+/*********** All Pages **********/
+body{
+  font-size: 12px;
+  background-color: #f2f2f2;
+  color: $c1;
+  font-family: "Iransans";
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  position: relative;
+}
+.mainarea{
+  padding: 40px 0;
+}
+.box{
+  @include border-radius(8px);
+  background-color: $c2;
+  @include box-shadow(0 3px 20px 0 rgba(216, 204, 188, 0.3));
+  border: solid 1px #dfdfdf;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.btn{
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  @include border-radius(4px);
+  color: $c2;
+  background-color: $c5;
+  font-size: 18px;
+  font-family: "Iransans_Bold";
+  &:hover{
+    color: $c2;
+  }
+}
+button.btn{
+  line-height: inherit;
+  padding: 0 15px 3px 15px;
+}
+.form-group{
+  margin-bottom: 20px;
+  .inp_border{
+    position: relative;
+    .placeholder{
+      position: absolute;
+      top: 10px;
+      right: 0;
+      font-size: 20px;
+      color: #575757;
+      @include transition;
+    }
+    .line{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      height: 2px;
+      width: 0;
+      background-color: $c5;
+      @include transition;
+    }
+    .form-control{
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-bottom: solid 1px #727d7d;
+      @include border-radius(0px);
+      outline: none;
+      @include box-shadow(none);
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      background-color: transparent;
+      &:focus{
+        ~ .placeholder{
+          top: -10px;
+          font-size: 15px;
+        }
+        ~ .line{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.forget_pass{
+  font-family: "Iransans_Medium";
+  font-size: 20px;
+  color: $c5;
+  border-bottom: dashed 1px $c5;
+  &:hover{
+    color: $c5;
+  }
+}
+.text{
+  p{
+    font-size: 20px;
+    line-height: 38px;
+  }
+}
+/*********** All Pages **********/
+/************ Header ***********/
+#header{
+  .header{
+    background-color: $c3;
+    padding: 15px 0;
+    #logo{
+      margin-left: 50px;
+    }
+    #menu{
+      display: flex;
+      align-items: center;
+      ul{
+        display: flex;
+        li{
+          margin-left: 30px;
+          a{
+            display: block;
+            font-size: 16px;
+            color: $c4;
+          }
+        }
+      }
+    }
+    .login_link{
+      font-size: 16px;
+      color: $c4;
+      img{
+        margin-right: 12px;
+      }
+    }
+  }
+}
+/************ Header ************/
