@@ -1,0 +1,62 @@
+@import 'global';
+
+
+.user-details-form {
+    width: 100%;
+
+    .form-row-new {
+        margin-top: 60px;
+
+        .marginR25 {
+            margin-right: 25px;
+        }
+
+        .form-header {
+            font-size: 23px;
+            line-height: 36px;
+            font-family: "Iransans_Medium";
+            color: #303030;
+            margin-bottom: 50px;
+        }
+
+        button {
+            width: 170px;
+            height: 48px;
+            font-family: "Iransans_Bold";
+            @include border-radius(4px);
+        }
+
+        .uploadBtns {
+            .upload-btn {
+                color: #7d4434;
+                font-size: 18px;
+                line-height: 28px;
+                @include box-shadow(0 0 15px 0 rgba(0, 0, 0, 0.2));
+                border: solid 1px #7d4434;
+                background-color: rgba(125, 68, 52, 0.1);
+                font-weight: bold;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// $tablet: "(min-width: 768px) and (max-width: 1023px)";
+/*---- responsive mode ----*/
+@media #{$size992} {
+    .user-details-form {
+        .form-row-new {
+            .uploadBtns {
+                justify-content: space-between !important;
+
+                .upload-btn {
+                    font-size: 14px;
+                }
+            }
+
+            .submitBtns {
+                justify-content: space-between !important;
+            }
+        }
+    }
+}

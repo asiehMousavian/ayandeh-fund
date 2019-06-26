@@ -284,3 +284,20 @@ button.btn{
   }
 }
 /************ Header ************/
+.page-header
+{
+  font-size: 24px;
+  line-height: 38px;
+  color: $c1;
+  font-family: "Iransans_Bold";
+  margin-bottom: 20px;
+}
+
+.btn-cancel {
+    background: #d8ccbc;
+    color: $c1;
+    width: 170px;
+    @include border-radius(4px);
+    height: 48px;
+
+}

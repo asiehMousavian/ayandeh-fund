@@ -133,7 +133,7 @@ img {
   margin-right: -15px;
 }
 
-.sprite, .box_tab .box_tab_t ul li a.active:before {
+.sprite {
   display: block;
   content: "";
 }
@@ -357,49 +357,52 @@ button.btn {
   height: 48px;
 }
 
-/******* Login/register tab ******/
-.box_tab .box_tab_t {
-  border-bottom: solid 1px #dfdfdf;
-}
-.box_tab .box_tab_t ul {
-  display: flex;
-}
-.box_tab .box_tab_t ul li {
-  width: 50%;
-}
-.box_tab .box_tab_t ul li a {
-  display: block;
-  height: 68px;
-  line-height: 68px;
-  text-align: center;
-  color: #000;
-  font-family: "Iransans_Medium";
-  font-size: 24px;
-}
-.box_tab .box_tab_t ul li a.active {
-  color: #7d4434;
-  position: relative;
-}
-.box_tab .box_tab_t ul li a.active:before {
+.user-details-form {
   width: 100%;
-  height: 3px;
-  position: absolute;
-  bottom: -1px;
-  right: 0;
-  z-index: 100;
-  background-color: #7d4434;
 }
-.box_tab #box_tab_content .tab-content {
-  padding: 60px 20px 70px 20px;
+.user-details-form .form-row-new {
+  margin-top: 60px;
 }
-
-.box_c {
-  margin: 50px 0 20px 0;
+.user-details-form .form-row-new .marginR25 {
+  margin-right: 25px;
 }
-
-.box_text {
-  text-align: center;
+.user-details-form .form-row-new .form-header {
+  font-size: 23px;
+  line-height: 36px;
+  font-family: "Iransans_Medium";
+  color: #303030;
   margin-bottom: 50px;
 }
+.user-details-form .form-row-new button {
+  width: 170px;
+  height: 48px;
+  font-family: "Iransans_Bold";
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.user-details-form .form-row-new .uploadBtns .upload-btn {
+  color: #7d4434;
+  font-size: 18px;
+  line-height: 28px;
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #7d4434;
+  background-color: rgba(125, 68, 52, 0.1);
+  font-weight: bold;
+  margin-top: 10px;
+}
 
-/******* Login/register tab ******/
+/*---- responsive mode ----*/
+@media only screen and (max-width: 991px) {
+  .user-details-form .form-row-new .uploadBtns {
+    justify-content: space-between !important;
+  }
+  .user-details-form .form-row-new .uploadBtns .upload-btn {
+    font-size: 14px;
+  }
+  .user-details-form .form-row-new .submitBtns {
+    justify-content: space-between !important;
+  }
+}
