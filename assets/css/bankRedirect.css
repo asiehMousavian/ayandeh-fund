@@ -357,6 +357,15 @@ button.btn {
   height: 48px;
 }
 
+/******* Header Responsive config **********/
+@media only screen and (max-width: 991px) {
+  #header .header #logo {
+    margin-left: 10px;
+  }
+  #header .header .login_link span {
+    display: none;
+  }
+}
 .page-header {
   font-size: 25px;
   line-height: 39px;
@@ -391,4 +400,44 @@ button.btn {
 
 .pursuit-btn-group {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .pursuit-btn-group button {
+    font-weight: 100;
+    font-size: 14px;
+    width: 30%;
+    font-family: "Iransans";
+  }
+
+  .main-body .pursuit-btns .code-span {
+    font-size: 20px;
+  }
+  .main-body .pursuit-btns .value-span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-body h1 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .img-container img {
+    width: 50px;
+  }
+
+  .page-header {
+    font-size: 20px;
+  }
+
+  .main-body .pursuit-btns {
+    padding: 10px 5px;
+  }
+  .main-body .pursuit-btns .code-span {
+    font-size: 18px;
+  }
+  .main-body .pursuit-btns .value-span {
+    font-size: 16px;
+  }
 }

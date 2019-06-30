@@ -357,6 +357,15 @@ button.btn {
   height: 48px;
 }
 
+/******* Header Responsive config **********/
+@media only screen and (max-width: 991px) {
+  #header .header #logo {
+    margin-left: 10px;
+  }
+  #header .header .login_link span {
+    display: none;
+  }
+}
 /******* Login/register tab ******/
 .box_tab .box_tab_t {
   border-bottom: solid 1px #dfdfdf;

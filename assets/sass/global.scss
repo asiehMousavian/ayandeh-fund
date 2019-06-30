@@ -301,3 +301,24 @@ button.btn{
     height: 48px;
 
 }
+
+
+/******* Header Responsive config **********/
+
+
+@media #{$size992}
+{
+  #header{
+    .header{
+      #logo{
+        margin-left: 10px;
+    }
+
+    .login_link {
+      span{
+        display: none;
+      }
+    }
+    }
+    }
+}
