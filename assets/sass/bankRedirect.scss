@@ -1,0 +1,106 @@
+@import 'global';
+
+.page-header {
+    font-size: 25px;
+    line-height: 39px;
+    color: #0f7d29;
+    text-align: center;
+    font-family: "Iransans_Bold";
+
+}
+
+.main-body {
+    h1 {
+        color: #313131;
+        font-size: 20px;
+        line-height: 23px;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .pursuit-btns {
+        padding: 40px 15px;
+        border-top: 2px solid #b7b7b7;
+
+        .code-span {
+            font-size: 25px;
+            line-height: 18px;
+            color: #303030;
+            font-family: "Iransans_Medium";
+
+        }
+
+        .value-span {
+            color: #000000;
+            font-size: 25px;
+            line-height: 16px;
+            font-family: "Iransans_Bold";
+
+        }
+    }
+}
+
+.pursuit-btn-group {
+    margin-top: 20px;
+}
+
+@media #{$size480} {
+    .pursuit-btn-group {
+        button {
+            font-weight: 100;
+            font-size: 14px;
+            width: 30%;
+            font-family: "Iransans";
+        }
+    }
+
+    .main-body {
+        .pursuit-btns {
+
+            .code-span {
+                font-size: 20px;
+
+            }
+
+            .value-span {
+                font-size: 18px;
+
+            }
+        }
+    }
+}
+
+@media #{$size480} {
+
+    .main-body {
+        h1 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    }
+
+    .img-container {
+        img {
+            width: 50px;
+        }
+    }
+
+    .page-header {
+        font-size: 20px;
+
+    }
+
+    .main-body {
+        .pursuit-btns {
+            padding: 10px 5px;
+
+            .code-span {
+                font-size: 18px;
+            }
+
+            .value-span {
+                font-size: 16px;
+            }
+        }
+    }
+}

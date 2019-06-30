@@ -133,7 +133,7 @@ img {
   margin-right: -15px;
 }
 
-.sprite, .box_tab .box_tab_t ul li a.active:before {
+.sprite {
   display: block;
   content: "";
 }
@@ -152,29 +152,29 @@ img {
   font-family: "Iransans_Bold";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  src: url("../fonts/eot/IRANSansWeb_Bold.eot");
+  src: url("../fonts/eot/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Iransans_Medium";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+  src: url("../fonts/eot/IRANSansWeb_Medium.eot");
+  src: url("../fonts/eot/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Iransans";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+  src: url("../fonts/eot/IRANSansWeb.eot");
+  src: url("../fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb.woff") format("woff"), url("../fonts/ttf/IRANSansWeb.ttf") format("truetype");
 }
 @font-face {
   font-family: "Iransans_Light";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+  src: url("../fonts/eot/IRANSansWeb_Light.eot");
+  src: url("../fonts/eot/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Light.ttf") format("truetype");
 }
 /********* Fonts **********/
 /*********** All Pages **********/
@@ -209,17 +209,15 @@ body {
 
 .btn {
   height: 48px;
-  line-height: 47px;
+  line-height: 48px;
   text-align: center;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  color: #fff !important;
+  color: #fff;
   background-color: #7d4434;
   font-size: 18px;
   font-family: "Iransans_Bold";
-  padding: 0 45px;
-  cursor: pointer;
 }
 .btn:hover {
   color: #fff;
@@ -258,7 +256,7 @@ button.btn {
   z-index: 100;
   height: 2px;
   width: 0;
-  background-color: #cb0d0d;
+  background-color: #7d4434;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -288,7 +286,6 @@ button.btn {
 .form-group .inp_border .form-control:focus ~ .placeholder {
   top: -10px;
   font-size: 15px;
-  color: #cb0d0d;
 }
 .form-group .inp_border .form-control:focus ~ .line {
   width: 100%;
@@ -307,10 +304,6 @@ button.btn {
 .text p {
   font-size: 20px;
   line-height: 38px;
-}
-
-.modal {
-  padding-right: 0 !important;
 }
 
 /*********** All Pages **********/
@@ -346,35 +339,6 @@ button.btn {
 }
 
 /************ Header ************/
-<<<<<<< HEAD
-/************ Modal ************/
-.modal .modal-content .modal-body {
-  padding: 25px 20px;
-}
-.modal .modal-content .modal-body .modal_title {
-  font-family: "Iransans_Bold";
-  font-size: 24px;
-  margin-bottom: 25px;
-}
-.modal .modal-content .modal-body .modal_txt {
-  margin-bottom: 30px;
-}
-.modal .modal-content .modal-body .modal_txt p {
-  text-align: center;
-  font-size: 20px;
-  line-height: 38px;
-}
-.modal .modal-content .modal-body .modal_desc {
-  margin-bottom: 30px;
-}
-.modal .modal-content .modal-body .modal_desc p {
-  font-family: "Iransans_Bold";
-  text-align: center;
-  font-size: 25px;
-}
-
-/************ Modal ************/
-=======
 .page-header {
   font-size: 24px;
   line-height: 38px;
@@ -402,50 +366,81 @@ button.btn {
     display: none;
   }
 }
->>>>>>> ef92af7f47f31d5eaec2fa09f5d818f02f70c87e
-/******* Login/register tab ******/
-.box_tab .box_tab_t {
-  border-bottom: solid 1px #dfdfdf;
-}
-.box_tab .box_tab_t ul {
-  display: flex;
-}
-.box_tab .box_tab_t ul li {
-  width: 50%;
-}
-.box_tab .box_tab_t ul li a {
-  display: block;
-  height: 68px;
-  line-height: 68px;
+.page-header {
+  font-size: 25px;
+  line-height: 39px;
+  color: #e2241b;
   text-align: center;
-  color: #000;
+  font-family: "Iransans_Bold";
+  margin: 20px 0;
+}
+
+.main-body h1 {
+  color: #313131;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 30px 0;
+  text-align: center;
+}
+.main-body .pursuit-btns {
+  padding: 40px 15px;
+  border-top: 2px solid #b7b7b7;
+  margin: 30px 0;
+}
+.main-body .pursuit-btns .code-span {
+  font-size: 25px;
+  line-height: 18px;
+  color: #303030;
   font-family: "Iransans_Medium";
-  font-size: 24px;
 }
-.box_tab .box_tab_t ul li a.active {
-  color: #7d4434;
-  position: relative;
-}
-.box_tab .box_tab_t ul li a.active:before {
-  width: 100%;
-  height: 3px;
-  position: absolute;
-  bottom: -1px;
-  right: 0;
-  z-index: 100;
-  background-color: #7d4434;
-}
-.box_tab #box_tab_content .tab-content {
-  padding: 60px 20px 70px 20px;
+.main-body .pursuit-btns .value-span {
+  color: #000000;
+  font-size: 25px;
+  line-height: 16px;
+  font-family: "Iransans_Bold";
 }
 
-.box_c {
-  margin: 50px 0 20px 0;
+.pursuit-btn-group {
+  margin-top: 20px;
 }
 
-.box_text {
-  text-align: center;
-  margin-bottom: 50px;
-}
+@media only screen and (max-width: 480px) {
+  .pursuit-btn-group button {
+    font-weight: 100;
+    font-size: 14px;
+    width: 30%;
+    font-family: "Iransans";
+  }
 
-/******* Login/register tab ******/
+  .main-body .pursuit-btns .code-span {
+    font-size: 20px;
+  }
+  .main-body .pursuit-btns .value-span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-body h1 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .img-container img {
+    height: 50px;
+  }
+
+  .page-header {
+    font-size: 20px;
+  }
+
+  .main-body .pursuit-btns {
+    padding: 10px 5px;
+    margin: 10px 0;
+  }
+  .main-body .pursuit-btns .code-span {
+    font-size: 18px;
+  }
+  .main-body .pursuit-btns .value-span {
+    font-size: 16px;
+  }
+}

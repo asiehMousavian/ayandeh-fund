@@ -346,6 +346,7 @@ button.btn {
 }
 
 /************ Header ************/
+<<<<<<< HEAD
 /************ Modal ************/
 .modal .modal-content .modal-body {
   padding: 25px 20px;
@@ -373,3 +374,32 @@ button.btn {
 }
 
 /************ Modal ************/
+=======
+.page-header {
+  font-size: 24px;
+  line-height: 38px;
+  color: #000;
+  font-family: "Iransans_Bold";
+  margin-bottom: 20px;
+}
+
+.btn-cancel {
+  background: #d8ccbc;
+  color: #000;
+  width: 170px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: 48px;
+}
+
+/******* Header Responsive config **********/
+@media only screen and (max-width: 991px) {
+  #header .header #logo {
+    margin-left: 10px;
+  }
+  #header .header .login_link span {
+    display: none;
+  }
+}
+>>>>>>> ef92af7f47f31d5eaec2fa09f5d818f02f70c87e
