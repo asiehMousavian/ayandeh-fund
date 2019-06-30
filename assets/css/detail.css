@@ -133,7 +133,7 @@ img {
   margin-right: -15px;
 }
 
-.sprite, .box_tab .box_tab_t ul li a.active:before {
+.sprite {
   display: block;
   content: "";
 }
@@ -373,49 +373,71 @@ button.btn {
 }
 
 /************ Modal ************/
-/******* Login/register tab ******/
-.box_tab .box_tab_t {
-  border-bottom: solid 1px #dfdfdf;
-}
-.box_tab .box_tab_t ul {
-  display: flex;
-}
-.box_tab .box_tab_t ul li {
-  width: 50%;
-}
-.box_tab .box_tab_t ul li a {
-  display: block;
-  height: 68px;
-  line-height: 68px;
-  text-align: center;
-  color: #000;
-  font-family: "Iransans_Medium";
-  font-size: 24px;
-}
-.box_tab .box_tab_t ul li a.active {
-  color: #7d4434;
+/******** Banner ********/
+.banner {
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 246px;
   position: relative;
 }
-.box_tab .box_tab_t ul li a.active:before {
-  width: 100%;
-  height: 3px;
-  position: absolute;
-  bottom: -1px;
-  right: 0;
-  z-index: 100;
+
+.detail_btn ul {
+  display: flex;
+  justify-content: space-between;
+}
+.detail_btn ul li a {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #7d4434;
+  font-family: "Iransans_Bold";
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 38px;
+}
+.detail_btn ul li:hover a {
+  background-color: #5c3226;
+}
+
+.detail_list ul li {
+  padding: 40px 0 30px 0;
+  border-bottom: solid 1px rgba(141, 62, 46, 0.3);
+}
+.detail_list ul li:last-child {
+  border: none;
+}
+.detail_list ul li .detail_list__p h3 {
+  text-align: center;
+  font-family: "Iransans_Bold";
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.detail_list ul li .detail_list__p .detail_list__p--d {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.detail_list ul li .detail_list__p .detail_list__p--d .detail_list__p--sec {
+  font-size: 20px;
+  font-family: "Iransans_Medium";
+  flex: 1;
+  text-align: center;
+}
+.detail_list ul li .detail_list__p .detail_list__p--d .detail_list__p--sec i {
+  font-style: normal;
+  font-size: 22px;
+  margin-right: 10px;
+}
+.detail_list ul li .detail_list__p .detail_list__p--d .divider {
+  width: 2px;
+  height: 15px;
   background-color: #7d4434;
 }
-.box_tab #box_tab_content .tab-content {
-  padding: 60px 20px 70px 20px;
-}
-
-.box_c {
-  margin: 50px 0 20px 0;
-}
-
-.box_text {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/******* Login/register tab ******/
